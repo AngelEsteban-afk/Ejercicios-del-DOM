@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es" data-dark>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>EjerciciosDOM</title>
+  </head> 
+  <body data-dark>
+    <header>
+      <h1>Ejercicios del DOM</h1>
+    </header>
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <aside class="panel">
+      <nav class="menu">
+        <a href="#seccion1">Reloj Digital y alarma sonora</a>
+        <a href="#seccion2">Eventos del teclado</a>
+        <a href="#seccion3">Cuenta Regresiva</a>
+        <a href="#seccion4">Responsive con JS</a>
+        <a href="#seccion5">Responsive Tester</a>
+        <a href="#seccion6">Deteccion de Dispostivos</a>
+        <a href="#seccion7">Deteccion de conexion</a>
+        <a href="#seccion8">Deteccion de WebCam</a>
+        <a href="#seccion9">Geolocalizacion</a>
+        <a href="#seccion10">Filtros de Busqueda</a>
+        <a href="#seccion11">Sorteo</a>
+        <a href="#seccion12">Responsive Slider</a>
+        <a href="#seccion13">Video Inteligente</a>
+        <a href="#seccion14">Validacion de formulario</a>
+        <a href="#seccion15">Narrador</a>
+    </aside>
+    <main>
+      <section id="seccion1" class="section">
+        <h2>Reloj Digital y alarma sonora</h2>
+        <div id="reloj"></div>
+        <div>
+          <button id="activar-reloj">Iniciar Reloj</button>
+          <button id="desactivar-reloj">Detener Reloj</button>
+          <button id="activar-alarma">Iniciar Alarma</button>
+          <button id="desactivar-alarma">Detener Alarma</button>
+        </div> 
+      </section>
+      <section id="seccion2" class="section">
+        <h2>Eventos de Teclado</h2>
+        <article class="stage">
+          <div class="ball"></div>
+        </article>
+      </section>
+      <section id="seccion3" class="section">
+        <h2>Cuenta Regresiva</h2>
+        <div id="countdown"></div>
+      </section>
+      <section id="seccion4" class="section">
+        <h2>Responsive con JS</h2>
+        <div id="youtube"></div>
+        <div id="gmaps"></div>
+      </section>
+      <section id="seccion5" class="section">
+        <h2>Responsive Tester</h2>
+        <form id="responsive-tester">
+          <input name="direccion" type="url" placeholder="URL" required>
+          <br>
+          <input name="ancho" type="text" placeholder="Ancho" required>
+          <br>
+          <input name="alto" type="text" placeholder="Alto" required>
+          <br>
+          <input name="probar" type="submit" value="Probar">
+          <br>
+          <input name="cerrar" type="button" value="cerrar">
+
+        </form>
+      </section>
+      <section id="seccion6" class="section">
+        <h2>Deteccion de Dispostivos <br>(User Agent)
+          <div id="user-device"></div>
+        </h2>
+      </section>
+      <section id="seccion7" class="section"><h2>Deteccion de la conexion</h2></section>
+      <section id="seccion8" class="section"><h2>Deteccion de WebCam</h2>
+      <video src="" id="webcam"></video></section>
+      <section id="seccion9" class="section"><h2>Geolocalizacion</h2>
+      <div id="geolocation"></div>
+      </section>
+      <section id="seccion10" class="section"><h2>Filtros de Busqueda</h2>
+      <input type="search" placeholder="Buscar..." class="card-filter">
+      <article class="cards">
+        <figure class="card">
+          <img src="http://fpoimg.com/200x200?text=Nature" alt="Nature"> <figcaption>Nature</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="http://fpoimg.com/200x200?text=Any" alt="Any"> <figcaption>Any</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="http://fpoimg.com/200x200?text=Tech" alt="Tech"> <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="http://fpoimg.com/200x200?text=Animals" alt="Animals"> <figcaption>Animals</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="http://fpoimg.com/200x200?text=People" alt="People"> <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="http://fpoimg.com/200x200?text=Architecture" alt="Architecture"> <figcaption>Architecture</figcaption>
+        </figure>
+      </article>
+      </section>
+      <section id="seccion11" class="section">
+        <h2>Sorteo Digital</h2>
+        <ul class="players">
+          <li class="player">JavaScript</li>
+          <li class="player">PHP</li>
+          <li class="player">JAVA</li>
+          <li class="player">C</li>
+          <li class="player">Python</li>
+          <li class="player">Ruby</li>
+          <li class="player">Go</li>
+          <li class="player">Visual Basic</li>
+          <li class="player">Rust</li>
+          <li class="player">Perl</li>
+        </ul>
+        <button id="winner-btn">Obtener Ganador</button>
+      </section>
+      </section>
+      <section id="seccion12" class="section">
+        <h2>Responsive Slider</h2>
+        <div class="slider">
+          <div class="slider-slides">
+            <div class="slider-slide active">
+              <img src="http://fpoimg.com/600x400?text=Animals" alt="animals">
+            </div>
+            <div class="slider-slide">
+              <h4>Diapositiva 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo deserunt natus sed, nostrum aut perferendis unde cum sint ab modi eos temporibus blanditiis eligendi facilis corrupti totam error placeat?</p>
+            </div>
+            <div class="slider-slide">
+              <img src="http://fpoimg.com/600x400?text=Animals" alt="animals">
+            </div>
+            <div class="slider-slide">
+              <h4>Dipositiva 4</h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum quidem voluptas, qui non voluptatem aliquam provident dignissimos? Reiciendis quisquam neque quo laborum nostrum, labore quas id ut hic adipisci?
+            </div>
+          </div>
+          <div class="slider-btns">
+            <a class="prev" href="#">&laquo;</a><a class="next" href="#">&raquo;</a>
+          </div>
+        </div>
+      </section>
+      <section id="seccion13" class="section">
+        <h2>Video Inteligente</h2>
+        <video src="assets/League of Legends 2024.04.26 - 19.22.01.01.mp4" muted controls loop data-smart-video></video>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <video src="assets/League of Legends 2024.04.26 - 19.22.01.01.mp4" muted controls loop data-smart-video></video>
+      </section>
+      <section id="seccion14" class="section">
+        <h2>Validacion de formulario</h2>
+        <form class="contact-form" action="https://formsubmit.co/angelestebanpc@gmail.com" method="POST" target="_blank">
+          <legend>Envianos tus comentarios</legend>
+          <input type="text" name="name" placeholder="Escribe tu nombre" title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+          <input type="email" name="email" placeholder="Escribe tu correo" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+          <input type="text" name="subject" placeholder="Asunto a tratar" title="El asunto es requerido" required>
+          <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios"   title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
+          <input type="submit" value="Enviar">
+          <div class="contact-form-loader none">
+            <img src="assets/tail-spin.svg" width="50" alt="">
+          </div>
+          <div class="contact-form-response none">
+            <p>Los datos han sido enviados</p>
+          </div>
+        </form>
+      </section>
+      <section id="seccion15" class="section">
+        <h2>Narrador</h2>
+        <select id="speech-select">
+          <option value="">--- Elige una Voz---</option>
+        </select>
+        <br><br>
+        <textarea id="speech-text" cols="50" rows="5" placeholder="Ingresa texto para leerlo..."></textarea>
+        <br><br>
+        <button id="speech-btn">Leer Texto</button>
+      </section>
+    </main>
+    <button class="scroll-top hidden">⬆</button>
+    <button class="dark-theme">🌙</button>
+    <script src="script.js" type="module"></script>
+  </body>
